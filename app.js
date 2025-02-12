@@ -1,5 +1,5 @@
 //O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
-    let listaDeNomes = [];
+    let amigos = [];
     
  //criar uma função que adiciona o nome anexado no array. Utilize document.getElementById ou document.querySelector
 
@@ -9,6 +9,7 @@
     }
 
 function adicionarAmigo() {
+    
     console.log('botão foi pressionado');
     let nomeDoAmigo = document.getElementById('amigo').value;
 
@@ -17,17 +18,19 @@ function adicionarAmigo() {
     if (nomeDoAmigo === '') {
         alert ('Coloque o nome de uma pessoa.');
     } else {
-        listaDeNomes.push(nomeDoAmigo);
-        console.log()
+        amigos.push(nomeDoAmigo);
 
         limparNome();
+
+        //consegui fazer aparecer os nomes na lista mas não consigo limpar
+        for (let i = 0; i < amigos.length; i++) {
+            let criarLista = document.createElement('li');
+            criarLista.textContent = amigos[i];
+            listaAmigos.appendChild(criarLista) ;
 
         console.log('nome incluido');
     }
 
     
 
- }
-
-
- document.getElementById('amigo')
+ }}
