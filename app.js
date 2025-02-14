@@ -19,10 +19,11 @@ function adicionarAmigo() {
         alert ('Coloque o nome de uma pessoa.');
     } else {
         amigos.push(nomeDoAmigo);
-
         limparNome();
 
-        //consegui fazer aparecer os nomes na lista mas não consigo limpar
+        listaAmigos.innerHTML = ''
+
+        //Aparece os nomes incluidos na lista
         for (let i = 0; i < amigos.length; i++) {
             let criarLista = document.createElement('li');
             criarLista.textContent = amigos[i];
@@ -31,6 +32,18 @@ function adicionarAmigo() {
         console.log('nome incluido');
     }
 
-    docume
-
  }}
+
+ //função para sortear o nome.
+ function sortearAmigo() {
+    let quantidadeDeNomes = amigos.length;
+    
+    if (quantidadeDeNomes <= 1) {
+        alert ('É preciso incluir mais de um nome na lista')
+    } else {
+        let nomeEscolhido = Math.floor(Math.random()*quantidadeDeNomes);
+        resultado.innerHTML = amigos[nomeEscolhido];
+        console.log(nomeEscolhido);
+    }
+
+ }
