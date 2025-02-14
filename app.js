@@ -25,7 +25,7 @@ function adicionarAmigo() {
         console.log('nome incluido');
     }
 
-    
+    docume
 
  }
 
