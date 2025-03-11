@@ -16,6 +16,8 @@ Este projeto é uma aplicação simples para organizar um sorteio de **Amigo Sec
 4. Após adicionar pelo menos dois nomes, clique em "Sortear amigo".
 5. O nome sorteado será exibido na tela.
 
+![Gravando-2025-03-11-160026](https://github.com/user-attachments/assets/da8cb8ea-6fa7-4714-9508-03f1b5d47563)
+
 ## 📂 Estrutura do Projeto
 ```
 📂 amigo-secreto
